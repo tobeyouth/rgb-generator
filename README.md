@@ -1,6 +1,8 @@
 #introduction
 
-*bg-generator*是基于(browserify)[http://browserify.org]和(gulp)[http://gulpjs.com]的前端脚手架。力争成为一个简单易用的generator。
+*bg-generator*是基于[react](http://facebook.github.io/react/),[browserify](http://browserify.org)和[gulp](http://gulpjs.com)的前端脚手架。力争成为一个简单易用的generator。
+具备了一键安装的依赖包和一个简单的`gulpfile`的功能。
+可以快速的上手使用。
 
 #install
     
