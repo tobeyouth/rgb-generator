@@ -6,7 +6,6 @@
  * 该命令需要在跟目录下执行 rgb build ${productname}
  */
 var gulpRun = require('./gulpRun.js');
-
 function build(params) {
 	if (params.length > 0) {
 		for (var i = 0,len = params.length;i < len;i++) {
@@ -17,5 +16,4 @@ function build(params) {
 		};
 	};
 };
-
 module.exports = build;
