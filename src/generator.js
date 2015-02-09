@@ -10,7 +10,6 @@ var readline = require('readline'),
 		output: process.stdout
 	}),
 	fs = require('fs'),
-	pwd = process.pwd,
 	template = fs.readFileSync(__dirname + '/template.js');
 
 function make(pkg) {
@@ -30,10 +29,15 @@ function mkdir(name) {
 		console.log("Product has exists!");
 		return false;
 	} else {
+		// flus tree
 		fs.mkdirSync(name);
 		fs.mkdirSync(name+"/demo");
 		fs.mkdirSync(name+"/styl");
-		fs.mkdirSync(name+"/js");
+		fs.mkdirSync(name+"/store");
+		fs.mkdirSync(name+"/action");
+		fs.mkdirSync(name+"/dispathcer");
+		fs.mkdirSync(name+"/action");
+		fs.mkdirSync(name+"/constants");
 		fs.mkdirSync(name+"/components");
 	};
 };
@@ -82,7 +86,6 @@ function generator() {
 	questions = Object.keys(pkg);
 
 	ask(questions,function(result) {
-		console.log(result);
 		for (key in result) {
 			if (result[key]) {
 				pkg[key] = result[key];

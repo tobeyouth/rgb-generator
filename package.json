@@ -8,6 +8,10 @@
     "bin": {
         "rgb": "bin/generator.js"
     },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:tobeyouth/rgb-generator.git"
+    },
     "dependencies": {
         "colorful": "~2.1.0",
         "browserify": "~8.1.0",

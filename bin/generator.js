@@ -9,7 +9,7 @@ var srcPath = "../src/";
 
 if (cli.indexOf(action) >= 0) {
     var command = require(srcPath+action+'.js');
-    command(params);
+    command.apply(null,params);
 } else {
     console.log("Bad command!");
 };

@@ -2,9 +2,12 @@
 
 module.exports = {
 	"cli": [
+		"init",
 	    // 创建工作目录
 	    "generator",
 	    "build",
-	    "release"
+	    "release",
+	    // 本地server
+	    "server"
 	]
 };
