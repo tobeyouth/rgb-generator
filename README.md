@@ -20,6 +20,10 @@
 6. `rgb server config`:配置本地静态资源服务。会在根目录下新建一个`serverConf.json`，这里面配置了host和port。
 7. `rgb server start`:启动本地静态资源服务。
 
+
+
+#useage
+
 1. In your root dir (like `/static`),`rgb init`.It will make some dir for your.
 2. Install some package:`npm install -g`
 3. Use `rgb generator` to make a product.It will ask your some question to make your product's package.json.
@@ -28,5 +32,3 @@
 6. Use `rgb server config`.It will ask your some question to make a `serverConf.json`.
 7. Use `rgb server star/stop/reload`.It will control your static server.
 
-#todo
-1. 项目自定义gulp插件
