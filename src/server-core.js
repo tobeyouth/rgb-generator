@@ -64,10 +64,16 @@ Server.prototype.start = function start() {
 	
 };
 Server.prototype.stop = function stop() {
+	console.log('closing');
 	if (this._socket) {
-    	this._socket.close();
+    	this._socket.close(function () {
+    		console.log('Your static server is closed');
+    	});
     	this._socket = null;
+  	} else {
+  		console.log('Your have no static server');
   	};
+  	process.exit();
 };
 Server.prototype.reload = function reload() {
 	this.stop();

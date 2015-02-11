@@ -1,6 +1,6 @@
 {
     "name":"rgb-generator",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "author": "tobeyouth",
     "email": "tobeyouth@gmail.com",
     "description": "A simple generator for product use React,Gulp,Brwoserify",
